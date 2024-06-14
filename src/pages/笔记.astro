@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Dht from "../components/NavigationBar.astro";
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -27,17 +29,18 @@ import Card from "../components/Card.astro";
 				</linearGradient>
 			</defs>
 		</svg>
-        <a href="/">home</a>
-		<a href="/about/">about</a>
-		<a href="/blog/">blog</a>
-        <a href="/笔记/">笔记</a>
+		<Dht/>  
+
 		<h1>课程笔记</h1>
-        <p>在这个页面，我将展示有关我的课程笔记。</p>
-          <ul>
-         <li><a href="/md/1/"> Astro 的安装及部署</a></li>
-         <li><a href="/md/2/"> 在Astro创建页面及导航 </a></li>
-    </ul>
+		<Footer />
+	</body>
+  </html>
 	</main>
+        <p>在这个页面，我将展示有关我的课程笔记。</p>
+         <ul>
+            <li><a href="/md/1/"> Astro 的安装及部署</a></li>
+            <li><a href="/md/2/"> 在Astro创建页面及导航 </a></li>
+         </ul>
 </Layout>
 
 <style>
